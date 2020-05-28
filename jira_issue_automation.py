@@ -100,5 +100,5 @@ def main_function(event, context):
     print("Start-Stop EC2 Instance",instance_name)
 
 # To Test JIRA API
-# curl -v https://yourwebsite.com/rest/api/2/issue --user username:password
+# curl -v https://yourJIRAsite.com/rest/api/2/issue --user username:password
 # echo -n username:password | base64
