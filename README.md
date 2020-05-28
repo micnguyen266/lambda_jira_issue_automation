@@ -7,3 +7,7 @@ and insert in the headers.
 4. Use the lambda_test_event.json file to make a test ticket. Please note in the event you would need to put an actual Instance ID as 
 the ec2nametag function will look up the instance tags.
 5. If things are not working make sure to setup the appropriate IAM roles.
+
+### Author
+
+Michael Nguyen https://github.com/micnguyen266
