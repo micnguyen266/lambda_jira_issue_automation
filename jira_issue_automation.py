@@ -1,7 +1,8 @@
 """
 This lambda function will create and post JIRA issues to your JIRA space based on EC2 health events. It uses JIRA's REST API and AWS CloudWatch Events to accomplish this.
-Right now the user and pass are encoded in base64 it uses the users api token in the headers. In the future it be best to use AWS Parameter stores or KMS to make this more secure.
+Right now the user and pass are encoded in base64 it uses the users api token in the headers.
 """
+# TODO: Use AWS Parameter stores or KMS in Auth headers to make this more secure.
 
 from __future__ import print_function
 
@@ -95,7 +96,7 @@ def ec2nametag(event, context):
     print("Error: Please check if there is a 'Name' tag for this instance.")
             
 ## Test Function    
-def main_function(event, context):
+def test_function(event, context):
     instance_name = ec2nametag(event,context)
     print("Start-Stop EC2 Instance",instance_name)
 
