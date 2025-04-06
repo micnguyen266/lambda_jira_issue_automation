@@ -1,0 +1,28 @@
+{
+  "version": "0",
+  "id": "example-id",
+  "detail-type": "AWS Health Event",
+  "source": "aws.health",
+  "account": "123456789012",
+  "time": "2025-04-05T12:00:00Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventArn": "arn:aws:health:us-east-1::event/AWS_EC2_RETIREMENT_SCHEDULED_EXAMPLE",
+    "service": "EC2",
+    "eventTypeCode": "AWS_EC2_INSTANCE_RETIREMENT_SCHEDULED",
+    "eventTypeCategory": "scheduledChange",
+    "startTime": "2025-04-06T00:00:00Z",
+    "eventDescription": [
+      {
+        "language": "en",
+        "latestDescription": "Your EC2 instance i-0123456789abcdef0 is scheduled for retirement."
+      }
+    ],
+    "affectedEntities": [
+      {
+        "entityValue": "i-0123456789abcdef0"
+      }
+    ]
+  }
+}
